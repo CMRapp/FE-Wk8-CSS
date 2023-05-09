@@ -1,0 +1,384 @@
+/*-- FONT FACE KITS --*/
+@font-face {
+    font-family: 'StarJedi';
+    src: url('/fonts/starjedi-webfont.woff2') format('woff2'),
+         url('/fonts/starjedi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'StarJediMono';
+    src: url('strjmono-webfont.woff2') format('woff2'),
+         url('strjmono-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Mandalore';
+    src: url('/fonts/mandalore-k77ld-webfont.woff2') format('woff2'),
+         url('/fonts/mandalore-k77ld-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-- Reset Page Defaults | Add paddinng */
+* {
+    box-sizing: border-box;
+  }
+
+main, header ,section, footer{
+    margin:0;
+    padding:5px;
+}
+
+/*** Primary Area Styles ***/
+main {
+    background-image: url('/images/starfield.jpg'); 
+}
+
+html {
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+    color: white;    
+}
+
+header, nav, .hero, footer {
+    flex:100%;
+}
+
+
+footer {
+    border-top: 1px solid red;
+    background: linear-gradient(112.1deg, rgb(20, 20,20) 25%, rgb(40, 30, 40) 50%, rgb(0, 0, 0) 75%);
+    font-style: italic;
+    border-radius: 5px;
+    height:75px;
+}
+footer p {
+   text-align: left;
+}
+
+.footer-logo{
+    float:right;
+    display:inline; 
+    vertical-align:middle;
+    height:40px;
+}
+
+/** FLEX STYLING ***/
+.flex-container {
+    display:flex;
+    flex-wrap: wrap;
+    text-align:center;
+    font-size:25px;
+}
+
+.flex-left {
+    flex:47%;
+    margin-right:3px;
+}
+
+.flex-left.about{
+    text-align:center;
+    flex:73%;
+    margin-right:3px;
+}
+
+.flex-right {
+    flex: 47%;
+    margin-left:3px;
+}
+
+.flex-right.about {
+    flex: 25%;
+    margin-left:3px;
+}
+
+/* Wrapper class to center content and provide max-width */
+.wrapper{
+    margin:auto;
+    max-width: 1200px;
+}
+
+/******** TYPOGRAPHY  *********/
+h1, h2, h3, h4, h5, h6 {
+    color:gold; 
+    font-family: StarJedi; 
+    margin-top:0px; 
+    margin-bottom: 0px;   
+}
+
+h1{
+    font-size: 55px;          
+}
+
+h2 {
+    font-size:45px;
+}
+
+h3 .mono {
+    font-family: 'StarJediMono';
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size:25px;
+}
+
+p, li, form {
+    font-size: 20px;
+}
+
+a {
+    color:goldenrod;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.tagline {
+    font-size:25px;
+    font-style: italic;
+    flex-wrap: wrap;
+}
+
+/* For Mandalorian Elements */
+.mando {
+    font-family: Mandalore;
+    font-size: 50px;
+    color:darkred;
+}
+
+ /*** HEADER NAVIGATION STYLING ****/
+ header li {
+    margin:5px;
+    display:inline;    
+    padding:5px;
+    background-color:goldenrod;
+    border-radius:5px;
+    align-items: center;
+  }
+  
+ header li a {
+    text-decoration:none;
+    color:black;
+}
+
+header li a.active {
+    text-decoration:none;
+    color:white;
+    text-shadow:1px 1px 2px black;
+}
+  header li a:hover {
+    text-decoration:none;
+    color:white;
+    text-shadow:1px 1px 2px black;
+}
+
+/* Format ul bullets */
+ul.list li{
+    list-style-type: none;
+    background-image:  url('/images/empire-icon.png'); 
+    background-position: 0 0;
+    background-size: 20px 20px;
+    background-repeat: no-repeat; 
+    padding-left: 30px;
+    text-align: left;
+      
+}
+
+/**** TABLE STYLING ****/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size:15px;
+    text-align: left;
+    color: white;
+  }
+
+  th, tr, td {
+    color:white;
+    border: 1px solid white;
+    padding: 5px 10px;
+  }
+
+  /**** FORM STYLING ****/
+  fieldset {
+    border-color:goldenrod;
+  }
+  
+  input[type=text], input[type=tel] {
+    height:25px;
+    width:200px;
+    border-radius: 5px;
+    padding:10px;
+    margin:10px 0;
+    font-size:14px;
+  }
+
+  input[type=submit]{
+    width:100%;
+    margin:20px 0px;
+    font-size:15px;
+    font-family: 'StarJedi';
+    background-color:goldenrod;
+    border-radius: 5px;
+    border:none;
+    cursor:pointer;
+  }
+
+  /**** OTHER ELEMENTS ***/
+  blockquote {
+    font-size: 20px;
+    margin:5px auto;
+    font-style:italic;
+    color: #ffffff;
+    padding:1.2em 30px 1.2em 75px;
+    border-left:8px solid goldenrod ;
+    line-height:1.6;
+    position: relative;
+  }
+
+  blockquote::before{
+    font-family:Arial;
+    content: "\201C";
+    color:goldenrod;
+    font-size:4em;
+    position: absolute;
+    left: 10px;
+    top:-10px;
+  }
+
+  blockquote::after{
+    content: '';
+  }
+  
+  blockquote span{
+    display:block;
+    color:goldenrod;
+    font-style: normal;
+    font-weight: bold;
+    margin-top:1em;
+  }
+
+  cite {
+    color:goldenrod;
+
+  }
+
+  figure { 
+    display:inline-block;
+    margin:5px;
+    }
+
+  figure img{
+    vertical-align:top;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(130,130,130, .5);
+  }  
+
+  figure figcaption {
+    font-weight: bold;
+    color: goldenrod;
+    font-style: oblique;
+    font-variant: small-caps;
+    font-size: 13px; 
+    margin-top:15px; 
+    text-align:center; 
+  }
+
+  hr {
+    line-height:3px;
+    color:goldenrod;
+  }
+
+  .gold-border{
+    border:1px solid goldenrod;
+  }
+
+  /**** OTHER IMAGES ****/
+   .hero-image {
+    width:100%;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(130,130,130, .5);
+  }
+
+  .imperial{
+    height:350px;
+    float:right;
+  }
+
+  .palpatine{
+    height: 225px;
+    box-shadow: 0 0 10px greenyellow; 
+    margin-top:20px;
+  }
+
+  .poster{
+    height:500px;
+    align-items: center;
+  }
+
+  .black-gloss{
+    background: linear-gradient(112.1deg, rgb(0, 0, 0) 11.4%, rgb(30, 30, 30) 50%, rgb(0, 0, 0) 70.2%);
+    border-radius:5px;
+    margin-bottom:20px;   
+  }
+
+  /**** CSS ANIMATIONS ****/
+   /* CREATE ROLLIN ANIMATION & CLASS */
+   .roll-in {
+    animation: 4s linear roll;
+   }
+
+   @keyframes roll {
+    0% {
+        left:-50%;              /* start at far left of viewport*/
+        transform: translateX(-100%) rotate(-120deg); 
+    } 
+    50%{
+        left:0;    /* end at center of viewport */
+        transform: translateX(0px) rotate(0deg); 
+    }
+  }
+
+  /* CREATE A FADE-IN ANIMATION & CLASS */
+  .fade-in {
+    animation: fadeIn 5s
+  }
+
+  @keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  /* MOVE OBJECT RIGHT TO LEFT */
+ @keyframes moveObj{
+    0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+  }
+
+/**** Media Queries ****/
+/* Turn on Flex when screen 640px and larger, otherwise stack elements */
+@media screen and (min-width: 640px){
+    .flex-container {
+        display: flex;
+    }    
+}
+@media screen and (max-width: 390px){
+    section {max-width:360px;}
+    h3.mono{font-size: 22px;}
+}
+
+/**** Hide CMR Logo on small screens ****/
+@media screen and (max-width: 640px){
+    .footer-logo{
+        display:none;
+    }    
+}
