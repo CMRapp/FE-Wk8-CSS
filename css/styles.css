@@ -1,8 +1,8 @@
 /*-- FONT FACE KITS --*/
 @font-face {
     font-family: 'StarJedi';
-    src: url('/fonts/starjedi-webfont.woff2') format('woff2'),
-         url('/fonts/starjedi-webfont.woff') format('woff');
+    src: url('../fonts/starjedi-webfont.woff2') format('woff2'),
+         url('../fonts/starjedi-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -10,16 +10,16 @@
 
 @font-face {
     font-family: 'StarJediMono';
-    src: url('strjmono-webfont.woff2') format('woff2'),
-         url('strjmono-webfont.woff') format('woff');
+    src: url('../fonts/strjmono-webfont.woff2') format('woff2'),
+         url('../fonts/strjmono-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 @font-face {
     font-family: 'Mandalore';
-    src: url('/fonts/mandalore-k77ld-webfont.woff2') format('woff2'),
-         url('/fonts/mandalore-k77ld-webfont.woff') format('woff');
+    src: url('../fonts/mandalore-k77ld-webfont.woff2') format('woff2'),
+         url('../fonts/mandalore-k77ld-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -41,7 +41,7 @@ main, header ,section, footer{
 
 /*** Primary Area Styles ***/
 main {
-    background-image: url('/images/starfield.jpg'); 
+    background-image: url('../images/starfield.jpg'); 
 }
 
 html {
@@ -188,7 +188,7 @@ header li a.active {
 /* Format ul bullets */
 ul.list li{
     list-style-type: none;
-    background-image:  url('/images/empire-icon.png'); 
+    background-image:  url('../images/empire-icon.png'); 
     background-position: 0 0;
     background-size: 20px 20px;
     background-repeat: no-repeat; 
@@ -218,7 +218,7 @@ table {
   }
   
   input[type=text], input[type=tel] {
-    height:25px;
+    height:40px;
     width:200px;
     border-radius: 5px;
     padding:10px;
