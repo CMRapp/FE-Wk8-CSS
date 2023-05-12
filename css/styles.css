@@ -25,10 +25,14 @@
 
 }
 
-/*-- Reset Page Defaults | Add paddinng */
+/*-- Clear Page Defaults | Add paddinng */
 * {
     box-sizing: border-box;
   }
+ body {
+  margin:0;
+  padding:0;
+}
 
 main, header ,section, footer{
     margin:0;
@@ -45,7 +49,7 @@ html {
     color: white;    
 }
 
-header, nav, .hero, footer {
+header, nav, .hero, footer, section {
     flex:100%;
 }
 
@@ -311,7 +315,7 @@ table {
 
   .imperial{
     height:350px;
-    float:right;
+    justify-content: center;
   }
 
   .palpatine{
@@ -321,8 +325,9 @@ table {
   }
 
   .poster{
-    height:500px;
-    align-items: center;
+    height: 545px;
+    margin-top:20px;
+    justify-content: center;
   }
 
   .black-gloss{
@@ -358,7 +363,7 @@ table {
     100% {opacity: 1;}
   }
 
-  /* MOVE OBJECT RIGHT TO LEFT */
+  /* MOVE OBJECT left TO right */
  @keyframes moveObj{
     0% {margin-left: 1000px;}
 	100% {margin-left: -1000px;}
